@@ -57,19 +57,17 @@ function Home() {
   }, []);
 
   return (
-    <main className="container mx-auto max-width section md:flex justify-between items-center">
+    <main className="container mt-4 mx-auto max-width section md:flex justify-between items-center md:mb-32">
       <div>
         <h1
           ref={h11}
           className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold"
         >
-          Hi,👋<br></br>My Name is<br></br>
-        </h1>
-        <h1
+          Hola,👋<br></br>Soy
+          <span 
           ref={h12}
-          className="text-2xl bg-clip-text bg-gradient text-transparent md:text-4xl xl:text-5xl xl:leading-tight font-bold"
-        >
-          {name}
+          className="text-2xl bg-clip-text text-gradient text-transparent md:text-4xl xl:text-5xl xl:leading-tight font-bold"> {name}.
+          </span>
         </h1>
         <h2
           ref={h13}
@@ -79,7 +77,7 @@ function Home() {
         </h2>
       </div>
       <div className="mt-5 md:mt-0">
-        <img ref={myimageref} className="w-1/2 md:ml-auto" src={img} alt="Pavan MG" />
+        <img ref={myimageref} className="w-3/4 md:ml-auto" src={img} alt="Carolina" />
       </div>
     </main>
   );

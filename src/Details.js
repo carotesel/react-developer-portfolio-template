@@ -1,17 +1,13 @@
 // Enter all your detials in this file
-// Logo images
-import logogradient from "./assets/logo.svg";
-import logo from "./assets/logo2.svg";
 // Profile Image
-import profile from "./assets/profile.jpg";
+import profile from "./assets/profile.png";
 // Tech stack images
 import html from "./assets/techstack/html.png";
 import css from "./assets/techstack/css.png";
-import sass from "./assets/techstack/sass.png";
 import js from "./assets/techstack/js.png";
 import react from "./assets/techstack/react.png";
-import redux from "./assets/techstack/redux.png";
 import tailwind from "./assets/techstack/tailwind.png";
+import nodejs from "./assets/techstack/nodejs.png";
 import bootstrap from "./assets/techstack/bootstrap.png";
 import vscode from "./assets/techstack/vscode.png";
 import github from "./assets/techstack/github.png";
@@ -20,25 +16,17 @@ import npm from "./assets/techstack/npm.png";
 import postman from "./assets/techstack/postman.png";
 import figma from "./assets/techstack/figma.png";
 // Porject Images
-import projectImage1 from "./assets/projects/project1.jpg";
-import projectImage2 from "./assets/projects/project2.jpg";
-import projectImage3 from "./assets/projects/project3.jpg";
-import projectImage4 from "./assets/projects/project4.jpg";
-import projectImage5 from "./assets/projects/project5.jpg";
-import projectImage6 from "./assets/projects/project6.jpg";
+import LockitImage from "./assets/projects/Lockit.png";
+import FoodieImage from "./assets/projects/Foodie2.png";
+import MovieImage from "./assets/projects/movieFinder.png";
 
-// Logos
-export const logos = {
-  logogradient: logogradient,
-  logo: logo,
-};
 
 // Enter your Personal Details here
 export const personalDetails = {
-  name: "Pavan MG",
-  tagline: "I build things for web",
+  name: "Carolina",
+  tagline: "Hago desarrollo FrontEnd.",
   img: profile,
-  about: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  about: `Soy una developer apasionada por los retos y las nuevas tecnologías.Me especializo en el area de front end aunque puedo trabajar como full stack. Además soy altamente comunicativa e intento aportar valor a cada producto que veo.`,
 };
 
 // Enter your Social Media URLs here
@@ -52,43 +40,29 @@ export const socialMediaUrl = {
 // Enter your Work Experience here
 export const workDetails = [
   {
-    Position: "Frontend Web Developer",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
-    Type: "Full Time",
-    Duration: "Sep 2021 - Dec 2021",
-  },
-  {
-    Position: "Internship",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
-    Type: "Internship",
-    Duration: "Sep 2021 - Dec 2021",
-  },
-  {
-    Position: "Internship",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
-    Type: "Internship",
-    Duration: "Sep 2021 - Dec 2021",
+    Position: "FrontEnd Developer",
+    Company: `SOUTHWORKS`,
+    Location: "Capital Federal",
+    Type: "Pasantía",
+    Duration: "Oct. 2022 - Dic. 2022",
   },
 ];
 
 // Enter your Education Details here
 export const eduDetails = [
   {
-    Position: "Frontend Development",
-    Company: "Udemy, YouTube, Google, Medium",
-    Location: "Online",
-    Type: "Full Time",
-    Duration: "Jan 2022 - Present",
+    Position: "Ingeniería en Informática",
+    Company: `UCEMA`,
+    Location: "Capital Federal",
+    Duration: "Mar. 2023 - Actualmente estudiando",
+    Type: "Universidad",
   },
   {
-    Position: "Bachelor in Electronics & Communication",
-    Company: `Your College Name here`,
-    Location: "Bengaluru",
-    Type: "Full Time",
-    Duration: "Aug 2020 - Present",
+    Position: "Secundario con orientación en Informática",
+    Company: `ORT Argentina`,
+    Location: "Capital Federal",
+    Duration: "Mar. 2018 - Nov. 2022",
+    Type: "Secundaria",
   },
 ];
 
@@ -98,9 +72,8 @@ export const techStackDetails = {
   css: css,
   js: js,
   react: react,
-  redux: redux,
-  sass: sass,
   tailwind: tailwind,
+  nodejs: nodejs,
   bootstrap: bootstrap,
   vscode: vscode,
   postman: postman,
@@ -113,56 +86,26 @@ export const techStackDetails = {
 // Enter your Project Details here
 export const projectDetails = [
   {
-    title: "Project title 1",
-    image: projectImage1,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    title: "LOCKIT App",
+    image: LockitImage,
+    description: `Lockit es una aplicación de alquiler temporal de lockers que hicimos con mis compañeras como proyecto final para la secundaria ORT.`,
+    techstack: "React Native, Node Js, PostreSQL",
+    previewLink: "https://www.figma.com/proto/9MshguFTa4N8meLAmz4Wn0/LOCKIT-WIREFRAME-%26-PROTOTYPE?node-id=289-681&scaling=scale-down&page-id=112%3A2&starting-point-node-id=136%3A316",
+    githubLink: "https://github.com/carotesel/Lockit-Frontend.git",
   },
   {
-    title: "Project title 2",
-    image: projectImage2,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    title: "Foodie Landing Page",
+    image: FoodieImage,
+    description: `Esta es una Landing Page para un restaurante llamado Foodie. Utiliza estructuras de React y estiliza los componentes con CSS.`,
+    techstack: "HTML/CSS, ReactJS",
+    previewLink: "https://landing-react.vercel.app/",
+    githubLink: "https://github.com/carotesel/landingReact",
   },
   {
-    title: "Project title 3",
-    image: projectImage3,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
-  },
-  {
-    title: "Project title 4",
-    image: projectImage4,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
-  },
-  {
-    title: "Project title 5",
-    image: projectImage5,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
-  },
-  {
-    title: "Project title 6",
-    image: projectImage6,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
+    title: "Movie Finder",
+    image: MovieImage,
+    description: `Este es un trabajo que realicé durante el secundario para la materia EFSI. En él, aprendimos a consumir datos de una API en React con Axios y a mostrar la información en el sitio con cards y un scroller.`,
+    techstack: "HTML/CSS, React Js",
     previewLink: "https://google.com",
     githubLink: "https://github.com",
   },
@@ -170,6 +113,6 @@ project lorem ipsum generator for dummy content`,
 
 // Enter your Contact Details here
 export const contactDetails = {
-  email: "hi@example.com",
-  phone: "+91 12345 67890",
+  email: "caroteselmann@gmail.com",
+  phone: "+54 9112272 4849",
 };
