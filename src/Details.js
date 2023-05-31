@@ -59,7 +59,7 @@ export const eduDetails = [
   },
   {
     Position: "Secundario con orientación en Informática",
-    Company: `ORT Argentina`,
+    Company: `ORT`,
     Location: "Capital Federal",
     Duration: "Mar. 2018 - Nov. 2022",
     Type: "Secundaria",
