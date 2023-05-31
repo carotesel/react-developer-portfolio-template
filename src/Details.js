@@ -54,7 +54,7 @@ export const eduDetails = [
     Position: "Ingeniería en Informática",
     Company: `UCEMA`,
     Location: "Capital Federal",
-    Duration: "Mar. 2023 - Actualmente estudiando",
+    Duration: "Mar. 2023 - Actualidad",
     Type: "Universidad",
   },
   {
