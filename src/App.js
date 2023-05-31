@@ -22,7 +22,6 @@ function App() {
       <Projects />
       <Technologies />      
       <Contact />
-      <Footer />
     </Router>
   );
 }
