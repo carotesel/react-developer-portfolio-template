@@ -11,7 +11,7 @@ function Work({ position, company, location, type, duration }) {
         </div> : null
         }
       </div>
-      <div className="flex justify-between pt-2">
+      <div className="flex justify-between items-center pt-2">
         <div className="flex flex-col md:flex-row">
           <div className="flex items-center md:pr-5">
             <svg
