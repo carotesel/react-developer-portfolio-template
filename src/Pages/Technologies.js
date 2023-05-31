@@ -18,13 +18,13 @@ function Technologies() {
     figma,
   } = techStackDetails;
   return (
-    <main className="container mx-auto max-width pt-20">
+    <main className="container mx-auto max-width md:pt-20 pb-20 md:pb-4">
       <section>
         <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold mb-8">
           Mis Conocimientos
         </h1>
       </section>
-      <section className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-5 items-center gap-16 pt-6">
+      <section className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-14 pt-6 place-items-center">
         <img src={html} title="html" alt="" />
         <img src={css} title="CSS" alt="" />
         <img src={js} title="JavaScript" alt="" />

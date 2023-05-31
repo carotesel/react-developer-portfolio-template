@@ -63,7 +63,7 @@ function Home() {
           ref={h11}
           className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold"
         >
-          Hola,👋<br></br>Soy
+          Hola, 👋<br></br>Soy
           <span 
           ref={h12}
           className="text-2xl bg-clip-text text-gradient text-transparent md:text-4xl xl:text-5xl xl:leading-tight font-bold"> {name}.

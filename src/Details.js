@@ -24,17 +24,17 @@ import MovieImage from "./assets/projects/movieFinder.png";
 // Enter your Personal Details here
 export const personalDetails = {
   name: "Carolina",
-  tagline: "Hago desarrollo FrontEnd.",
+  tagline: "Soy desarrolladora FrontEnd.",
   img: profile,
-  about: `Soy una developer apasionada por los retos y las nuevas tecnologías.Me especializo en el area de front end aunque puedo trabajar como full stack. Además soy altamente comunicativa e intento aportar valor a cada producto que veo.`,
+  about: `Me apasionan por los retos y las nuevas tecnologías. Mi especialidad es en el area de front end aunque puedo trabajar como full stack. Además, me gusta trabajar en equipo e intento aportar valor a cada producto que veo.`,
 };
 
 // Enter your Social Media URLs here
 export const socialMediaUrl = {
-  linkdein: "https://www.linkedin.com/",
-  github: "https://www.github.com/",
+  linkdein: "https://www.linkedin.com/in/carolina-teselman-2b8383222/",
+  github: "https://github.com/carotesel",
   twitter: "https://twitter.com/",
-  instagram: "https://www.instagram.com/",
+  instagram: "https://www.instagram.com/caroteselman/?hl=es",
 };
 
 // Enter your Work Experience here

@@ -37,7 +37,7 @@ function Project({ title, image, description, techstack, previewLink, githubLink
               href={previewLink}
               target="_blank"
               rel="noreferrer noopener"
-              className="underline md:pl-2 font-light dark:text-white"
+              className="underline md:pl-2 pl-1 font-light dark:text-white"
             >
               Live Preview
             </a>
@@ -62,7 +62,7 @@ function Project({ title, image, description, techstack, previewLink, githubLink
               href={githubLink}
               target="_blank"
               rel="noreferrer noopener"
-              className="underline md:pl-2 font-light dark:text-white"
+              className="underline md:pl-2 pl-1 font-light dark:text-white"
             >
               View Code
             </a>
