@@ -13,7 +13,7 @@ function Project({ title, image, description, techstack, previewLink, githubLink
         <div className="flex justify-between items-center mt-8">
           <div className="flex items-center">
             <svg
-              className="stroke-dark-heading dark:stroke-white inline-block min-w-fit"
+              className="stroke-dark-heading dark:stroke-white inline-block"
               width="20"
               height="20"
               viewBox="0 0 20 20"
@@ -44,7 +44,7 @@ function Project({ title, image, description, techstack, previewLink, githubLink
           </div>
           <div className="flex items-center">
             <svg
-              className="dark:fill-light-heading fill-dark-heading inline-block min-w-fit"
+              className="dark:fill-light-heading fill-dark-heading inline-block"
               width="20"
               height="20"
               viewBox="0 0 20 20"
