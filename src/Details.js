@@ -58,7 +58,7 @@ export const eduDetails = [
     Type: "Universidad",
   },
   {
-    Position: "Secundario con orientación en Informática",
+    Position: "Secundario orientado a Informática",
     Company: `ORT`,
     Location: "Capital Federal",
     Duration: "Mar. 2018 - Nov. 2022",

@@ -57,7 +57,7 @@ function Home() {
   }, []);
 
   return (
-    <main className="container mt-4 mx-auto max-width section md:flex justify-between items-center md:mb-32">
+    <main className="container mt-4 mx-auto max-width section md:flex justify-between items-center md:mb-32" id="home">
       <div>
         <h1
           ref={h11}

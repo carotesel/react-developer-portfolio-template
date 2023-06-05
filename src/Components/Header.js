@@ -3,14 +3,32 @@ import { NavLink } from "react-router-dom";
 import { socialMediaUrl } from "../Details";
 
 function Header() {
+  const [hoveredItem, setHoveredItem] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
-  const { linkdein, github, twitter } = socialMediaUrl;
+  const { linkdein, github } = socialMediaUrl;
   const toggleClass = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleItemHover = (index) => {
+    setHoveredItem(index);
+  };
+
+  const handleItemClick = (index) => {
+    setHoveredItem(index);
+    toggleClass();
+  };
+
+  const navItems = [
+    { name: "Home", id: "home" },
+    { name: "Acerca de", id: "about" },
+    { name: "Proyectos", id: "projects" },
+    { name: "Tecnologías", id: "technologies" },
+    { name: "Contacto", id: "contact" },
+  ];
+
   return (
-    <header className="container mx-auto md:flex justify-between py-2 max-width">
+    <header className="container mx-auto md:flex justify-between max-width pt-4 md:pt-0 bg-white md:fixed md:top-0 md:w-full z-10">
       <div className="flex justify-between items-center py-2 md:py-10">
         <div onClick={toggleClass} className="cursor-pointer">
           <svg
@@ -30,39 +48,30 @@ function Header() {
           </svg>
         </div>
       </div>
-      <nav className={` ${!isOpen ? "hidden" : null} text-center md:flex justify-between`}>
-        <ul className="dark:text-light-content font-medium md:flex items-center md:space-x-5 md:mr-10">
-          <li className="pb-1 md:pb-0">
-            <NavLink to="/" onClick={toggleClass}>
-              Home
-            </NavLink>
-          </li>
-          <li className="pb-1 md:pb-0">
-            <NavLink to="/about" onClick={toggleClass}>
-              Acerca de
-            </NavLink>
-          </li>
-          <li className="pb-1 md:pb-0">
-            <NavLink to="/technologies" onClick={toggleClass}>
-              Tecnologías
-            </NavLink>
-          </li>
-          <li className="pb-1 md:pb-0">
-            <NavLink to="/projects" onClick={toggleClass}>
-              Proyectos
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" onClick={toggleClass}>
-              Contacto
-            </NavLink>
-          </li>
+      <nav
+        className={` ${
+          !isOpen ? "hidden" : null
+        } text-center md:flex justify-between`}
+      >
+        <ul className="dark:text-light-content font-medium md:text-lg	 md:flex items-center md:space-x-5 md:mr-10">
+          {navItems.map((item, index) => (
+            <li
+              key={index}
+              className={`pb-1 md:pb-0 md:hover:text-purple-700 transition-all duration-75 ${
+                hoveredItem === index ? "text-purple-700" : ""
+              }`}
+            >
+              <a href={`#${item.id}`} onClick={() => handleItemClick(index)}>
+                {item.name}
+              </a>
+            </li>
+          ))}
         </ul>
         <ul className="flex justify-evenly items-center my-5 md:my-0 md:space-x-5 md:mr-5">
           <li>
             <a href={linkdein} target="_blank" rel="noreferrer noopener">
               <svg
-                className="dark:fill-light-heading fill-dark-heading"
+                className="dark:fill-light-heading fill-dark-heading hover:fill-purple-700 transition-all duration-150"
                 width="30"
                 height="30"
                 viewBox="0 0 30 30"
@@ -76,7 +85,7 @@ function Header() {
           <li>
             <a href={github} target="_blank" rel="noreferrer noopener">
               <svg
-                className="dark:fill-light-heading fill-dark-heading"
+                className="dark:fill-light-heading fill-dark-heading hover:fill-purple-700 transition-all duration-150"
                 width="30"
                 height="30"
                 viewBox="0 0 30 30"

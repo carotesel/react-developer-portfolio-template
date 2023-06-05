@@ -18,7 +18,7 @@ function Technologies() {
     figma,
   } = techStackDetails;
   return (
-    <main className="container mx-auto max-width md:pt-20 pb-20 md:pb-4">
+    <main className="container mx-auto max-width md:pt-20 pb-20 md:pb-4" id="technologies">
       <section>
         <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold mb-8">
           Mis Conocimientos
