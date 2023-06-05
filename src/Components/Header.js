@@ -28,7 +28,7 @@ function Header() {
   ];
 
   return (
-    <header className="container mx-auto md:flex justify-between max-width pt-4 md:pt-0 bg-white md:fixed md:top-0 md:w-full z-10">
+    <header className="container mx-auto md:flex justify-between max-width pt-4 md:pt-0 md:bg-white md:fixed md:top-0 md:w-full z-10">
       <div className="flex justify-between items-center py-2 md:py-10">
         <div onClick={toggleClass} className="cursor-pointer">
           <svg
