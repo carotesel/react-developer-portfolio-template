@@ -1,5 +1,6 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -13,7 +14,7 @@ module.exports = {
         "dark-mode": "#191919",
         "dark-card": "#363636",
         "green-text": "#018C0F",
-        "greenbg": "#D7FFE0",
+        greenbg: "#D7FFE0",
       },
     },
   },

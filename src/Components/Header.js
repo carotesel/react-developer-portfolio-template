@@ -1,17 +1,14 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import { socialMediaUrl } from "../Details";
+import { BsFillMoonFill } from "react-icons/bs";
 
-function Header() {
+function Header({ setTheme, theme }) {
   const [hoveredItem, setHoveredItem] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
+
   const { linkdein, github } = socialMediaUrl;
   const toggleClass = () => {
     setIsOpen(!isOpen);
-  };
-
-  const handleItemHover = (index) => {
-    setHoveredItem(index);
   };
 
   const handleItemClick = (index) => {
@@ -28,7 +25,7 @@ function Header() {
   ];
 
   return (
-    <header className="container mx-auto md:flex justify-between max-width pt-4 md:pt-0 md:bg-white md:fixed md:top-0 md:w-full z-10">
+    <header className="container mx-auto md:flex justify-between max-width pt-4 md:pt-0 dark:bg-dark-mode md:bg-white md:fixed md:top-0 md:w-full z-10 ">
       <div className="flex justify-between items-center py-2 md:py-10">
         <div onClick={toggleClass} className="cursor-pointer">
           <svg
@@ -99,6 +96,14 @@ function Header() {
                 />
               </svg>
             </a>
+          </li>
+
+          <li>
+            <BsFillMoonFill
+              size={30}
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              color={theme === "dark" ? "#CCCCCC" : null}
+            />
           </li>
         </ul>
       </nav>
