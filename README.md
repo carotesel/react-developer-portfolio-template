@@ -1,6 +1,4 @@
 # React Developer Portfolio template
-#### Live Demo https://react-portfolio-v1.netlify.app/
-#### Figma Design https://www.figma.com/community/file/1116246660507537002
 
 ## Follow Below instructions to add your deatils in the portfolio.
 
